@@ -119,6 +119,97 @@ var firstName3 = "Tyrell";
 firstLetterOfFirstName = firstName3[0] /* Output: "T". Because "T" is the FIRST letter of the name */
 firstLetterOfFirstName = firstName3[3] /* Output: "e". Because "e" is the FOURTH letter of the name */
 
+// String Immutability (Cannot be altered once created)
+
+var myStr = "Jello World";
+
+myStr[0] = "H"; /*Cannot change and individual letter */
+myStr = "Hello World"; /*Must rewrite entire string to change */
+
+//Bracket Notation to find Last Character in String
+
+var lastName = "Mercolino";
+var lastLetterOfLastName = lastName[lastName.length -1]; /* We use "-1" because the int starts at 0. There are 9 letters total - 1 means the 8th integer */
+
+//Bracket Notation to find Nth-to-Last Character in String
+
+var lastName = "Mercolino";
+var lastLetterOfLastName = lastName[lastName.length -3];
+
+//Word Blanks
+
+function wordBlanks (myNoun, myAdjective, myVerb, myAdverb) {
+    var result = "";
+    result += "The " + myAdjective + " " + myNoun + " " + myVerb + " to the store " + myAdverb + "."; /* Output: The big dog ran to the store quickly. */
+
+    return result;
+}
+console.log(wordBlanks("dog", "big", "ran", "quickly"));
+
+//Store Multiple Values with Arrays
+
+var ourArray = ["John", 23]; /* Elements inside an array can be any data type */
+
+//Nested Arrays
+
+var ourArray = [["the univers", 42], ["everything", 2022]];
+
+//Access Array Data with Indexes
+
+var ourArray = [50,60,70];
+
+var ourData = ourArray[0]; //equals 50
+var ourData = ourArray[2]; //equals 70
+
+////Modify Array Data with Indexes
+
+var ourArray = [12,64,99];
+ourArray[1] = 45;  //ourArray now equals [18,45,99].
+
+// Access Multi-Dimensional Arrays wtih Indexes
+
+var myArray = [[1,2,3], [4,5,6], [7,8,9], [[10,11,12],13, 14]]; //This Array contains 4 arrays inside it and in the 4th array is another array. This makes the whole Array 3 layers deep
+
+var myData = myArray [0][0]; //This is calling the 1st index array(1,2,3) and going deeper to call the first index in that array(1).
+
+//Manipulate Arrays with push()
+
+var ourArray = ["Stimpson", "J", "cat"];
+
+    //Pushes new said array into the end of the already existing array.
+ourArray.push(["happy", "joy"]); //ourArray now equals ["Stimpson", "J", "cat", ["happy", "joy"]].
+
+//Manipulate Arrays with pop()
+var ourArray = [1,2,3];
+
+    //Removes the last index of the array(ourArray) and moves it into new variable(removedFromOurArray).
+var removedFromOurArray = ourArray.pop(); //removedFromOurArray now equals 3, and ourArray now equals [1,2]
+
+//Shopping List
+var myList = [["ceareal", 3], ["milk", 2], ["bannanas", 3], ["juice", 2],["eggs", 12]]; 
+
+//Write Reusable Code with Functions
+
+function ourReusableFunction() {
+    console.log("Heyya, World")
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 console.log()
