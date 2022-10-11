@@ -99,10 +99,28 @@ var myName = "Tyrell";
 //Add Variable Name inbetween Quotes
 var myStr4 = "Hello, my name is " + myName + ", nice to meet you."; /* Output: Hello, my name is Tyrell, nice to meet you.*/
 
-// Append Variables to Strings
+// Appending Variables to Strings
+var anAdjective = "awesome!";
+var ourString = "Tyrell Mercolino is ";
+ourString += anAdjective; /* Output: Tyrell Mercolino is awesome! */
+
+//Finding Length of String
+
+var firstNameLength = 0;
+var firstName2 = "Bob";
+
+firstNameLength = firstName2.length /* Output: 3. Because there are 3 letters in the name "Bob" */
+
+//Bracket Notation to FInd First Character in String
+
+var firstLetterIfFirstName = "";
+var firstName3 = "Tyrell";
+
+firstLetterOfFirstName = firstName3[0] /* Output: "T". Because "T" is the FIRST letter of the name */
+firstLetterOfFirstName = firstName3[3] /* Output: "e". Because "e" is the FOURTH letter of the name */
 
 
 
-
+console.log()
 //video: https://www.youtube.com/watch?v=PkZNo7MFNFg&t=376s
 // time: 14:50
